@@ -1,0 +1,80 @@
+.coinGridCard {
+  position: relative;
+
+  width: 200px;
+  padding: 5px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  filter: opacity(0.7);
+  cursor: pointer;
+}
+.coinGridCard:hover {
+  filter: opacity(1);
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 16px;
+  }
+  .logo {
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 10px;
+  }
+}
+
+.red {
+  color: red;
+  fill: red;
+}
+
+.green {
+  color: green;
+  fill: green;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.svg {
+  fill: white;
+}
+
+.svg:hover {
+  transition: all 0.2s ease;
+  fill: red;
+}
+
+.closeButton {
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+
+.aligntextleft {
+  text-align: left;
+  align-items: flex-start;
+  text-transform: uppercase;
+}

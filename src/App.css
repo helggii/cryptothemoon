@@ -1,9 +1,15 @@
 .App {
   text-align: center;
+  background: url("../assets/bg-stars.svg"),
+    linear-gradient(180deg, #191a24 0%, #281c2c 100%);
+  min-height: 100vh;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40px;
   pointer-events: none;
 }
 
@@ -26,6 +32,40 @@
   color: rgb(112, 76, 182);
 }
 
+.Coin-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  max-width: 75%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  margin: 0;
+}
+
+.rocket {
+  position: relative;
+  animation: rotation 4s infinite linear;
+  height: auto;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-359deg);
+  }
+}
+
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);
@@ -36,4 +76,13 @@
   100% {
     transform: translateY(0px);
   }
+}
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollable {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
